@@ -1,6 +1,0 @@
-<!doctype html><meta charset="utf-8"><title>LauraLogopaedie</title><body style="font-family:sans-serif">Dateien werden übertragen…
-<script>
-(async()=>{try{const m=await (await fetch('manifest.json',{cache:'no-store'})).json();const out={};
-for(const f of m){const r=await fetch(f.id+'.bin',{cache:'no-store'});out[f.id]={name:f.name,type:f.type,buf:await r.arrayBuffer()};}
-if(window.opener){window.opener.postMessage({edx:out},'https://eduki.com');document.body.textContent='Fertig – Fenster kann geschlossen werden.';setTimeout(()=>window.close(),1500);}else{document.body.textContent='Kein Opener';}}catch(e){document.body.textContent='Fehler: '+e;}})();
-</script>
